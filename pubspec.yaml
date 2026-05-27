@@ -1,0 +1,103 @@
+name: smartlib_ai
+description: A production-ready smart library management system for engineering labs
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.9
+  riverpod_annotation: ^2.3.3
+  
+  # Supabase
+  supabase_flutter: ^2.8.0
+  
+  # UI Components
+  cached_network_image: ^3.3.0
+  cupertino_icons: ^1.0.6
+  flutter_animate: ^4.3.0
+  flutter_staggered_animations: ^1.1.1
+  flutter_svg: ^2.0.9
+  glassmorphism: ^3.0.0
+  google_fonts: ^4.0.5
+  lottie: ^2.7.0
+  shimmer: ^3.0.0
+  
+  # QR/Barcode
+  mobile_scanner: ^5.2.3
+  qr_flutter: ^4.1.0
+  
+  # PDF
+  flutter_pdfview: ^1.3.2
+  path_provider: ^2.1.1
+  pdf: ^3.10.7
+  printing: ^5.11.1
+  
+  # Notifications
+  firebase_messaging: ^14.7.6
+  flutter_local_notifications: ^17.2.2
+  
+  # File/Image
+  file_picker: ^6.1.1
+  image_picker: ^1.0.5
+  
+  # Charts & Analytics
+  fl_chart: ^0.65.0
+  syncfusion_flutter_charts: ^24.1.41
+  
+  # Utilities
+  connectivity_plus: ^5.0.2
+  dio: ^5.4.0
+  intl: ^0.18.1
+  permission_handler: ^11.1.0
+  share_plus: ^7.2.1
+  shared_preferences: ^2.2.2
+  
+  # Voice
+  flutter_tts: ^3.8.5
+  speech_to_text: ^6.5.1
+  
+  # OCR
+  google_mlkit_text_recognition: ^0.13.1
+  
+  # Icons
+  font_awesome_flutter: ^10.6.0
+  ionicons: ^0.2.2
+  
+  # Forms & Validation
+  form_validator: ^2.1.1
+
+dev_dependencies:
+  build_runner: ^2.4.7
+  flutter_lints: ^3.0.1
+  flutter_test:
+    sdk: flutter
+  riverpod_generator: ^2.3.9
+  riverpod_lint: ^2.3.7
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lottie/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+
+dependency_overrides:
+  app_links: 6.3.0
